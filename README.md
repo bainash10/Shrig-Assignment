@@ -1,13 +1,15 @@
 # Shrig Assignment
 
 This repository contains two separate tasks for processing rectangle images:
-1. **Task 1 – Rectangle Numbering**  
+1. **Task 1: Rectangle Numbering**  
    Assign numbers (1 to 4) inside each rectangle based on the length of a line drawn inside it.  
    - **Shorter line represents Lower number**  
    - **No reordering of the rectangles in the original image**  
 
-2. **Task 2 – Rectangle Alignment**  
+2. **Task 2: Rectangle Alignment**  
    Align and straighten all given rectangle images so they are upright (deskewed). 
+
+---
 
 # Folder Structure
 
