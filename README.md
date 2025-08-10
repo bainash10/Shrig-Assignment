@@ -11,7 +11,7 @@ This repository contains two separate tasks for processing rectangle images:
 
 ---
 
-# Folder Structure
+## Folder Structure
 
 | Folder / File Path                              | Description                                                       |
 |-------------------------------------------------|-------------------------------------------------------------------|
@@ -25,3 +25,28 @@ This repository contains two separate tasks for processing rectangle images:
 | `input.png`                                 | Input image used for Task 2                                             |
 | **README.md**                                   | Project documentation                                              |
 
+---
+
+##  Task 1 – Rectangle Numbering
+
+**Algorithm:**
+1. **Image Preprocessing**  
+   - Convert RGB → Grayscale  
+   - Apply Gaussian Blur for noise reduction  
+   - Use Canny Edge Detection to detect edges
+
+2. **Rectangle Detection**  
+   - Find contours using `cv2.findContours`  
+   - Filter shapes with four vertices (rectangles)  
+   - Crop each rectangle as Region of Interest (ROI)
+
+3. **Line Detection Inside Rectangle**  
+   - Apply Hough Line Transform (`cv2.HoughLinesP`) on ROI  
+   - Measure line lengths using Euclidean distance (`np.linalg.norm`)  
+   - Sort by length and assign numbers (shorter = lower number)
+
+4. **Result**  
+   - Draw the assigned number inside the rectangle  
+   - Save output image
+
+---
