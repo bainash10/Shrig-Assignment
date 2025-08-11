@@ -82,3 +82,6 @@ Or
 ```bash
 pip install opencv-python numpy matplotlib
 ```
+
+## Note
+Outputs of each python file or .ipynb file will be saved in the same respective task folder.
