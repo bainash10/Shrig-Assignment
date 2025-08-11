@@ -2,7 +2,7 @@
 
 This repository contains two separate tasks for processing rectangle images:
 1. **Task 1: Rectangle Numbering**  
-   Assign numbers (1 to 4) inside each rectangle based on the length of a line drawn inside it.  
+   Assign numbers (1 to 4) below each rectangle based on the length of a line drawn inside it.  
    - **Shorter line represents Lower number**  
    - **No reordering of the rectangles in the original image**  
 
@@ -20,7 +20,7 @@ This repository contains two separate tasks for processing rectangle images:
 | `rectangle_numbering.py`                    | Clean, organized Python script for Task 1                         |
 | `input.png`                                 | Input image used for Task 1                                             |
 | **Task2_Alignment/**                            | Contains all files for Task 2 (rectangle alignment)               |
-|  `Test_code_for_Task2.ipynb`                 | Jupyter Notebook with step-by-step Task 2 implementation          |
+|  `Test_code_for_Task2.ipynb`                 | Jupyter Notebook with step by step Task 2 implementation          |
 |  `rectangle_alignment.py`                    | Clean, organized Python script for Task 2                         |
 | `input.png`                                 | Input image used for Task 2                                             |
 | **README.md**                                   | Project documentation                                              |
