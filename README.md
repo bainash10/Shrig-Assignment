@@ -71,4 +71,14 @@ This repository contains two separate tasks for processing rectangle images:
 
 4. **Result**  
    - Save aligned (upright) rectangles
-   
+
+
+## Requirements
+Install dependencies before running scripts:
+```bash
+pip install requirements.txt
+```
+Or
+```bash
+pip install opencv-python numpy matplotlib
+```
