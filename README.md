@@ -31,7 +31,7 @@ This repository contains two separate tasks for processing rectangle images:
 
 **Algorithm:**
 1. **Image Preprocessing**  
-   - Convert RGB → Grayscale  
+   - Convert RGB to Grayscale  
    - Apply Gaussian Blur for noise reduction  
    - Use Canny Edge Detection to detect edges
 
@@ -50,3 +50,25 @@ This repository contains two separate tasks for processing rectangle images:
    - Save output image
 
 ---
+
+##  Task 2 – Rectangle Alignment
+
+**Algorithm:**
+1. **Image Preprocessing**  
+   - Convert RGB to Grayscale  
+   - Apply Gaussian Blur for noise reduction  
+   - Use Canny Edge Detection to detect edges
+
+2. **Rectangle Detection**  
+   - Find contours and approximate polygons  
+   - Identify corner points of each rectangle
+
+3. **Deskewing with Perspective Transform**  
+   - Order points in consistent order (top-left, top-right, bottom-right, bottom-left)  
+   - Calculate rectangle’s width and height  
+   - Map corners to a perfect rectangle using `cv2.getPerspectiveTransform`  
+   - Apply warp using `cv2.warpPerspective`
+
+4. **Result**  
+   - Save aligned (upright) rectangles
+   
